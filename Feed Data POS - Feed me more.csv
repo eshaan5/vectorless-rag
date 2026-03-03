@@ -1,0 +1,952 @@
+Topic,Level,Description,Module
+"Category
+(Baseline)",Brand,"▪ Supercategories: Add Super Categories / Edit & Delete Super Categories
+
+▪ Categories: Add Categories / Edit & Delete Categories / Addon Properties
+Categories have ""checkbox"" properties to enable a set of properties example: Addons/combos/not in billing etc for that respective category
+
+Addons - categories to be used to hold addons
+Combo - category to be used for combo mapping of items
+Not in weborder - exclude items from web ordering platform(posist weborder)
+Not in Billing - category doesn't show on regular billing page for punching
+Addon as Normal item - Addons can be tagged as addon's and can be punched as a normal item",Admin
+"Item
+(Baseline)",Brand,"▪ Add Items / Search to Edit & Delete Items
+Mandatory Fields marked with ""X or dropdown"" - Item Name/ Item Number/ Category/ Rate
+
+Item Name - enter name of item *Mandatory*
+Item UID - 1 time Unique Code - type first digit, and manually choose the number from the dropdown list *Mandatory*
+Universal Item - not in use
+Description - Item Description can be provided - which would reflect under Aggregator websites
+Services - portion for number of people
+Item Number - item number sequencing
+Rate - cost of the item *Mandatory*
+Fixed Cost - as per recipe a cost can be defined
+SAP code - for Account software SAP integration
+Veg/Non veg - tagging mark
+Not in Sweet Shop - ""Sweet Shop configuration(deployment)"" - Sell in qtys - 200gms/500gms/1kg
+Retail Items - can be used for MRP retail items (for Stock Raw materials)
+Package - would be used only banquet module (Buffet package 1, buffet package 2)
+Has Variant - Half/ full versions of items - (used with Aggregators Menu management)",Admin
+"Comments
+(Baseline)",Brand,"Can create commonly used comment tags such as, ""Extra Ice/ no Sugar/ no onions etc"" which can be tagged onto individual items for use at the time of taking an order
+▪ Add, Edit & Delete Comments
+▪ Comment Mapping for use on front end POS",Admin
+"Addons Map
+(Baseline)",Brand,"Create Addons under Items and assign them into an ""Addon Properties Category""
+
+Under Addon Map - all addons will show on the left.
+Tag/map items to the specific addons",Admin
+"Map Section
+(Baseline)",Brand,"Create & bifurcate menu items as per sections Example: Beverages, Chinese, Continental, Indian, Pastas & Pizzas etc
+This is used for reporting purposes for comparison of different groups of items
+
+Can Create and define Sections, Edit & Delete Sections",Admin
+"Map Liquor
+(Brief)",Brand,"Mapping all items as regular food or liquor
+Used for reports and also Splitting bills for customers by food/liquor",Admin
+"Tax
+(Baseline)",Brand,"Create & Define Taxes, example GST / VAT, service tax or other charges.
+Define the tax being percentage/fixed amount.
+
+
+Edit & Delete Tax / Tax Properties Function available
+
+Can define properties: gst/gst on serv. charge/mandatory tax/charge",Admin
+"Assigning Item Images
+(Baseline)",Brand,"Upload Item images and assign to specific items.
+Be sure to select checkbox ""Save as Original Image"" before assigning.
+
+Used for Zomato and few other aggregators with two way integration
+Item Image size Zomato: 400x400 - 1600x1600 pixels; less than 5mb image size",Admin
+"Make Combo
+(Baseline)",Brand,"Create Combo items under Items and assign them into a ""Combo Properties Category""
+
+Group - add groups to create a group of options for the combo - example: Main Course group/ drinks group/ desserts group
+Edit name of group by clicking on Group 1 (left hand side)
+Select Category and choose either all items / a specific item from the Category.
+""+"" can be used to add more choices within the group
+Min / Max qty - can be assigned to increase / decrease number of items that can be selected in the group
+Item Max qty - place a max qty of each item that can be selected
+
+Price - any additional price to be charged for the group can be entered. Default is 0 
+Differential Pricing option can be selected to add the items Original Pricing
+
+
+Level - if within a group, want to add 1st:base level, 2nd: Upgrade level, etc... with different pricing
+Tag update choices as ""upgrade level""
+
+Press Next: to assign Date range & other customizations",Admin
+"Item Barcode
+(If Applicable)",Brand,"Used for QR Menu Integration /Barcode Integration.
+Used to obtain barcodes to print for each item",Admin
+"Item Custom Group
+(If Applicable)",Brand,Add Custom Groups - for reporting purposes,Admin
+"Item Association
+(If Applicable)",Brand,"Tag items associated to each other - for reporting purposes
+Example: Burger, fries, coke etc",Admin
+"Item Short Name
+(Baseline)",Brand,Assign short forms for long names - especially useful for KOT/ KDS to avoid using too much printing space with large item names.,Admin
+"Predefined Comment
+(Brief)",Brand,"Create predefined comments for Void/ reprint, Complementary and other bill functionality.
+",Admin
+"Predefined Discount
+(Brief)",Brand,Create Predefined discount with defined percentage values,Admin
+"BTC
+(Baseline)",Brand,"Or Bill To Company, gives access to creating companies and adding employees(with employee ID's) on a tab basis.
+
+Can be used where multiple employees visit a restaurant on a credit basis.
+Bills are later compiled and payment collected either by parties concerned or by the company at a later time(end of the month)
+
+Settlement is made via the BTC section.",Admin
+"Item Variant Mapping
+(Baseline)",Brand,"Creating Items with ""Has Variant"" checkbox property assigns the items into this tab.
+
+Ideally 3 or more items are created.
+1 Base Item with 0 Pricing, checked as ""has variant""
+Half and full shouldn't be tagged under ""has variant"" - but are mapped under this section to the respective base item.",Admin
+Tags,Brand,Tags can be specifically designed and mapped to several items.,Admin
+Format Level,,Format -  Activate/Deactivate Categories  & Apply Taxes & Packaging Charges  to Categories & Items,Admin
+"Item
+(Baseline)",Format,Used to search and review items created at the Brand Level,Admin
+"Tabs
+(Baseline)",Format,"Create & manage Tabs(Main Billing Interface) for variety of POS operations:
+Table/ Take Out/ Delivery/ Banquet
+
+Names and Details can be specified with the Properties of Operations selected.
+Priority can be Determined for the order of the Tab
+",Admin
+"Tax
+(Baseline)",Format,"Taxes created at the Brand Level, can be assigned to the relevant Tabs.
+Specific Tabs can have taxes associated with their operations. Example Service Tax is only for Dine, but not delivery
+
+▪ Cascade tax can be stacked. Example GST on Service Tax.
+
+All taxes can be edited, deleted or reassigned to relevant tabs.",Admin
+"Tab-Category Mapping
+(Baseline)",Format,"Used to Activate ""Categories"" from the brand level as Active or inactive status in each tab
+
+Also used for Category-level Taxation basis tax bracket required",Admin
+"Item-Tax Mapping
+(Baseline)",Format,"Used to further apply tax brackets to specific items within Categories.
+
+Can disable items without taxes example MRP items.",Admin
+Banquet Services -> taxes,Format,"For Banquet Module.
+Used to Assign Taxes for Additional Banquet Services, eg - Decorations, DJ, Compare etc",Admin
+Cluster level,,,Admin
+"Item
+(Baseline)",Cluster,"Review all items available within the brand.
+Can Search & Activate / Deactivate items CLUSTER WISE from this section",Admin
+"Tabs-Item
+(Baseline)",Cluster,"Can be used to configure rates with items for separate tabs
+Example Dine in can have a separate rate from Delivery/ Takeaway tabs.
+
+Individual items can also be activated/ deactivated",Admin
+Dynamic pricing,Cluster,"Every individual item can have different sessions in which pricing can be different from each other, So a outlet can have same item on multiple prices on the basis of sessions, i.e : breakfast, lunch and dinner",Admin
+Deployment Level,Settings,"Update All Deployment/ Outlet Details:
+Name, Mobile Number, Address, GST/ VAT no, Company Name, Franchise, Preferred Language, Daily Emailer (scheduler setting for Enterprise ID only)
+",Admin
+Menu Management Settings,Items,"Here, user can active and deactivate items on outlet/deployment level",Admin
+Menu Management Settings,Charges,"Every deployment can have their own charges like packaging charges, service charges. Also, the taxes on brand level can also cascade the charges - All of this can be done on deployment level",Admin
+Menu Management Settings,Sessions,"Day Sessions - Day sessions are being made to bifurcate the day timings into breakfast, lunch and dinner - All the sales then can be divided into sessions for the day ",Admin
+Menu Management Settings,Complimentary head,"When user use complimentary offer, so they have to define that this complimentary item is going to this complimentary head - basically a name",Admin
+Menu Management Settings,BTC,"Bills to comapny can be define on outlet too, herer we can define the company name, employee names, their id number, address lines and  mobile and email facility so that a bill can directly assign to a specific employee of specific company",Admin
+Menu Management Settings,Locations,"An outlet can have locations to run on, beyond these location it wouldn't work",Admin
+Menu Management Settings,Predefined Comments,"We have a option of predefine comments, for example:- Void, Discount, Complementary, Re Print, Kot, Cash Variance, Bill, Kitchen Message, Online/Advance Order Rejection, ExpressOffer(Billwise), Kot-Reprint, Reason (Manual EDC), Remove Charges",Admin
+Menu Management Settings,Disabled Tabs,"Locations can be added for Area Wise Delivery purposes.
+Each Outlet has it's locations assigned. Beyond that location, other outlets can take over.
+Used for integration with One Click (Third party company in Dubai)",Admin
+Menu Management Settings,Dynamic Pricing,"The same as setting Dynamic Pricings at Cluster Level.
+Every individual item can have different sessions in which pricing can be different from each other, So a outlet can have same item on multiple prices on the basis of sessions, i.e : breakfast, lunch and dinner",Admin
+Menu Management Settings,Default Offer,"Offers created and Brand & Deployment Level can be selected as an Default/ Automatically Applied offer.
+
+This will take effect for every bill punched into the system, 
+(manually can be deleted from ""Offers"" button on front end POS)
+
+Permissions can be enabled for specific users only.",Admin
+Billing Settings,General,- Scan Barcode To Print Bill - can be utilized for bakery type items where scanning action of a barcode punches to print the bill,Admin
+Billing Settings,General,"- Allow accept without printing KOT - for online orders, can skip KOT printing and accept the bill",Admin
+Billing Settings,General,- Seperate Button To Mark Food Ready - Keep an MFR button ready to split the food ready from Dispatch(For online orders),Admin
+Billing Settings,General,"- Show Veg / Non-Veg Flag - marks veg items as green, non-veg items as red on main billing punching screen",Admin
+Billing Settings,General,- Cancel Item after Print Bill - allows void post printing a bill,Admin
+Billing Settings,General,- Enable Sweet Shop - enables sweet shot functionality - 100 gms/250gms/ 1kg - gram qty can be added to change price for sale portion wise,Admin
+Billing Settings,General,- Deployment Alias -  enables to mark a pseudo name for an alias to avoid confusion,Admin
+Billing Settings,General,- Enable Comment to Void Bill - Voiding a bill will require a comment,Admin
+Billing Settings,General,- Enable Comment to Edit Bill - editing a bill will require a comment,Admin
+Billing Settings,General,- Manager Permission On: Bill TransferKot Transfer Item TransferVoid KotVoid/Change Item Qty - set permissions for the choice of activity,Admin
+Billing Settings,General,- Auto Start New Bill - auto starts a new bill after one is closed,Admin
+Billing Settings,General,"- Reset SerialNumber Daily - bill series number starts from 1, at new day open",Admin
+Billing Settings,General,- Enable Advance Booking - activates advance booking feature for the outlet,Admin
+Billing Settings,General,- Send email of bill - email is sent to the clients email information if collected in CRM,Admin
+Billing Settings,General,- Send SMS of bill - sms is sent to the clients mobile number information if collected in CRM (transactional module required,Admin
+Billing Settings,General,- Disable Bill RoundOff - does not auto round off the bill,Admin
+Billing Settings,General,- No punch Of Item/Discount after Print: Item/ Discount - disables the ability to punch more items/ discount after printing a bill,Admin
+Billing Settings,General,- Comment on re-print Bill - requirement for comment on re-printing a bill,Admin
+Billing Settings,General,- Disable Transfer of: Bill/Kot/Item - blocks transfer of specific bill/ Kot/ item,Admin
+Billing Settings,General,- Hide Discount Amount Field - hide discount amount field for billing,Admin
+Billing Settings,General,- Max no of addons - set a max addon's in total which can be punched onto a bill,Admin
+Billing Settings,General,- Max quantity of each addons - set max qty of each addon which can be punched onto a bill,Admin
+Billing Settings,General,- AddOn Compulsory - select between addons being compulsory/ optional for all addon mapped items,Admin
+Billing Settings,General,-Stop Modify Bill Before CutOff Time (In Hrs.) - can set a cut off time to prevent any modification of bills,Admin
+Billing Settings,General,- Max addOn from each category - set max addon which can be selected from each category,Admin
+Billing Settings,General,- Hide Category In Billing - hides the category filter bar from billing pos,Admin
+Billing Settings,General,- Disable BackDate Expense - prevents any backdated expenses from being logged onto expense module,Admin
+Billing Settings,General,"- Manual Qty Entry Sweet Shop - with sweet shop functionality, has access to manually enter numbers rather than selecting",Admin
+Billing Settings,General,- Set Current User as Waiter - defaults the current user to the waiter for reporting purposes,Admin
+Billing Settings,General,- Enable Made/Unmade Option - gives option to mark made(ready) for delivery/takeaway,Admin
+Billing Settings,General,- Show Serial Number On TakeOut/Delivery Bill - provides the serial number of the bill on takeout/delivery bills,Admin
+Billing Settings,General,- Tabwise Bill Series (For Cloud Kitchen) - separate bill series as per different brands(Cloud kitchen tabs),Admin
+Billing Settings,General,- Tabwise Bill Series (For IOT) - separate the bill series as per different format tabs(IOT),Admin
+Billing Settings,General,- Specific Tabwise Bill Series (For IOT) - CHECK,Admin
+Billing Settings,General,- Enable Comment on Split Bill - require to enter in a comment when splitting a bill,Admin
+Billing Settings,General,- Change Status After Split Bill - CHECK,Admin
+Billing Settings,General,- Hide Item Search - hides the item search and item punch from the top right section of Billing POS,Admin
+Billing Settings,General,- Decimal Places - enables decimal places within billing,Admin
+Billing Settings,General,- Disable Void Bills - prevents voiding bills from billing operations,Admin
+Billing Settings,General,"- Round Off Near 5 - rounds of prices ranging from 1 - 4 to Rs 5, or Rs 10 respectively, maintaining """"no change"""" aspect",Admin
+Billing Settings,General,- Enable Transfer Across TabTypes: Takeout/ Delivery  - grants access to transferring tables or orders across tab; takeaway/delivert to dine in,Admin
+Billing Settings,General,- Enable Split Before Print KOT - enables user to split a table order before punching the KOT (Button shows up below the Print KOT Option),Admin
+Billing Settings,General,- Disable Void KOT after Print Bill - blocks voiding a KOT after print is completed,Admin
+Billing Settings,General,"- Enable Multi Split - gives access to Multi Split a bill(split a bill into multiple parts - not just 2); however once split, cannot be split again",Admin
+Billing Settings,General,"- Enable Customer Display - for use in KDS, to allow clients to see the orders punched",Admin
+Billing Settings,General,"- Set Passcode User as Waiter - opening a table with passcode, associates that user as the waiter of the table(for reporting)",Admin
+Billing Settings,General,- Disable KDS Update message - skips KDS Updates message prompt,Admin
+Billing Settings,General,- Enable Banquet Split - access to splitting banquet reservations payments,Admin
+Billing Settings,General,- Disable Bill Editing and Voiding After Cutoff Time - Blocks find bill feature of editing and voiding after the day cut off time,Admin
+Billing Settings,General,- Add Manual Weight - similar to sweet shop usage - selecting an item gives prompt box to enter qty of the item and weightage to calculate the pricing,Admin
+Billing Settings,General,- Show Bill Number on Table - displays Bill number on billing table view screen,Admin
+Billing Settings,General,- Enable Transfer from Table to : Takeout/Delivery - access to transferring bills from table to takeout/delivery,Admin
+Billing Settings,General,"- Consecutive Bill Series (For IOT) - bill series allocate in a consecutive manner across the different terminals, with IOT (Default off, is separate series per terminal)""",Admin
+Billing Settings,Cut Off Time,"- Some restaurants run and are active till early morning 2 or 3 AM.
+The cut off time, by default is 5AM, any bills punched before this time reflect for the previous days reports
+
+
+Outlet Cut off time can be amended, but changes take effect from the 1st of the next month.
+(The reason for this is to ensure the monthly reporting cycle doesn't get affected)",Admin
+Billing Settings,Settlement,Settle Bill on Print: joins Settle and Bill print option into one action,Admin
+Billing Settings,Settlement,"Other Settings are available for Settle by user, and to ENABLE/DISABLE relevant Payment Modes",Admin
+Billing Settings,Settlement,Includes PAYMENT GATEWAYS MODES / BANK MODES / WALLETS / ONLINE PAYMENT MODES,Admin
+Billing Settings,Settlement,TIPS can be enabled through this menu Settings (only available for card payment modes),Admin
+Billing Settings,Menu Settings,- Sort by Item Number - format of sorting,Admin
+Billing Settings,Menu Settings,- Sort by Alphabetic - format of sorting,Admin
+Billing Settings,Menu Settings,- Bar Exchange IP (not in use anymore),Admin
+Billing Settings,Menu Settings,- Enable Item Image - POS/ Online Order - shows images uploaded at the brand level on the chosen platform,Admin
+Billing Settings,Menu Settings,- Menu Item Alphanumeric - format of sorting,Admin
+Billing Settings,Menu Settings,- Sort Addon by Item Number - format of sorting for addons,Admin
+Billing Settings,Menu Settings,"- Combined Menu for UrbanPiper - enable to utilize 1 Tab for online aggregators through UrbanPiper""",Admin
+Billing Settings,Tax Settings,- Activate inclusive Tax - tax gets included in the pricing (Gulf regions),Admin
+Billing Settings,Tax Settings,"- Bill wise offer taxation fix - enabling(default) this setting, applies tax according to the offer of discount (100 - 90 post discount, tax calculated on 90, instead of 100)",Admin
+Billing Settings,Tax Settings,- Remove Taxes Manually - can be used to remove Service Tax on bills,Admin
+Billing Settings,Tax Settings,- HSN/SAC Number - can be assigned if a generic number needs to be added,Admin
+Billing Settings,Tax Settings,- Enable Tax on Addon - addon prices get taxed,Admin
+Billing Settings,Tax Settings,- Enable Tax Before Discount - (not in use),Admin
+Billing Settings,Tax Settings,- UTGST applied - can be enabled for Union Territories (Statewise),Admin
+Billing Settings,Offer Settings,- Apply Automatic Discounts,Admin
+Billing Settings,Offer Settings,- Discount on Addons,Admin
+Billing Settings,Offer Settings,- Enable Bill Express Offer - hide the express offer option,Admin
+Billing Settings,Offer Settings,- Comment on Offers - makes comments mandatory on offers,Admin
+Billing Settings,Offer Settings,- Allow Offer to Waiter - allow permissions for waiters to apply offers,Admin
+Billing Settings,Offer Settings,- Disable Discount on AddOn on Bill Wise Offers - removes AddOns from the discount criteria,Admin
+Billing Settings,Offer Settings,- Comment on Item Wise Offers - makes comments mandatory for Item Wise Offers,Admin
+Billing Settings,Offer Settings,- Disable Item Wise Express Offer - hide the express offer from item modifier section(3 dots button),Admin
+Billing Settings,Offer Settings,"- Redeem Loyalty Points as discount - used with integration with Capillary""",Admin
+Billing Settings,Offer Settings,- Show Offers Applied on Bill -  offers get included in the clients bill,Admin
+Billing Settings,Table Management,"- Delivery Boy Selection Required - makes mandatory for either """"Take out/Delivery"""" type formats",Admin
+Billing Settings,Table Management,- Waiter Selection required - makes mandatory,Admin
+Billing Settings,Table Management,- Restaurant Capacity - can be used to define max numerical capacity for the restaurant,Admin
+Billing Settings,Table Management,- Enable Covers - turn on the option to enter and track covers for the required format,Admin
+Billing Settings,Table Management,- No. of Tables - can be used to define and showcase number of tables at the front end POS,Admin
+Billing Settings,Table Management,"- Cover Mandatory - make the tracking of covers mandatory for the required format.""",Admin
+Billing Settings,Passcode Settings,"- Multiple options accessible to enable or disable passcode requirement for activities such as:
+Discount
+Void Bill
+Re-Print Bill / Re-Print KOT
+Table Access
+Express Offer
+Split Bill
+Stock In/ Stock Out
+Table transfer
+Sweet Shop
+Bypass Passcode for Item Comment
+Table (Non-IOT)
+Advance Bill Accept/Reject
+Use Waiter Passcode for Delivery/Takeaway
+
+Maintaining separate User Passcodes, can help TRACK which user is performing which function within the billing operations.",Admin
+Billing Settings,CRM Settings,- Enable CRM Alert on Bill - alert to collect client info for selected tab,Admin
+Billing Settings,CRM Settings,- Enable CRM Mandatory on Bill - mandatory requirement to collect client info for selected tab to print a bill*,Admin
+Billing Settings,CRM Settings,- Skip CRM By Manager Passcode - manager passcode can skip mandatory CRM requirement,Admin
+Billing Settings,CRM Settings,- Add Customer Information Without Bill,Admin
+Billing Settings,CRM Settings,- Disable Customer Info on Printed Bill - hides CRM data on the bill,Admin
+Billing Settings,CRM Settings,- Max/ Min Number of Digit in mobile (CRM) - limits entry of data into the CRM (10 digits - India),Admin
+Billing Settings,CRM Settings,"- Optional Customer Name - can make customer name as Optional - mandatory only number, sorted by numbers",Admin
+Billing Settings,CRM Settings,- Enable CRM Compulsory on Bill - mandatory requirement to collect client info for selected tab to punch an order*,Admin
+Billing Settings,CRM Settings,- Allow Zero in Mobile number - 0 as first digit,Admin
+Billing Settings,CRM Settings,"- Enable Country Code in CRM - can add country code at the start of the mobile number""",Admin
+Billing Settings,Instance -> Settlement Mode,"- Settlement Modes can be customized as per the Instance/Terminal Needs.
+Example:
+T1 - can be set for Cash and Card Only.
+T2 - can be set for Online, Others, Btc",Admin
+Billing Settings,Shift And Petty Cash,- Enable Petty Cash - activates Petty cash for that Outlet,Admin
+Billing Settings,Shift And Petty Cash,- Enter Cash on Opening Shift - Opening and Closing the day asks for cash balance available,Admin
+Billing Settings,Shift And Petty Cash,- Denomination mandatory in Petty Cash,Admin
+Billing Settings,Shift And Petty Cash,- Validate Shift Opening and Closing Amount - validates and checks for variance with the opening and closing amount available in the system and what's entered,Admin
+Billing Settings,Shift And Petty Cash,"- Validate Day Closing Amount - post the previous step, also validates day closing amount",Admin
+Billing Settings,Shift And Petty Cash,- Blind Closing - system won't notify of variance(hides from cashier) - but reports showcase the variance - for short/extra cash,Admin
+Billing Settings,Shift And Petty Cash,- Max Shift Closing Attempts - can be set,Admin
+Billing Settings,Shift And Petty Cash,- Enable Shift Transfer can be set for use - transfer balance of cash to other user,Admin
+Billing Settings,Shift And Petty Cash,- Disable Shift management,Admin
+Billing Settings,Shift And Petty Cash,Print receipt for shift - can be enabled to get a hard copy of shift amt,Admin
+Billing Settings,Shift And Petty Cash,- Enable Shift Verification - cashier has to verify with manager - manager re-closes cashiers shift post verification.,Admin
+Billing Settings,Shift And Petty Cash,- Use permission for Cash Drawer - only selected users can be given access to Cash Drawer(this is besides bill settling) - bill settle auto opens for all,Admin
+Billing Settings,Shift And Petty Cash,- Enable Open Cash Drawer in Petty Cash - Main Cash Drawer Setting - to open the Cash Drawer for set billing operations,Admin
+Billing Settings,Shift And Petty Cash,"- Match Logged in user with Shift User - only User that is logged into the system can login to shift""",Admin
+Billing Settings,Shift And Petty Cash,- Max Cash in Till - can set a max amount - where the software will prompt to cash out from till to office,Admin
+Billing Settings,Other Settings,"Available Options:
+- Instance Server - used to enter the IP address port number (http://192.168.190.9000) of the IOT box (IOT setups only)
+- Show Food Cost as Ideal Cost
+- Activate Virtual Keyboard - can be used to set up keyboard pop ups for touch screen pos
+- Enable Notifications - FOR ANTI THEFT MODULE; managers can receive anti theft notifications(void/discounts applied done by which user) - needs to be activated from the backend
+- Enable Insights - FOR COCKPIT APPLICATION - showcases additional insights
+- Independent Instance - Enabled to PAUSE IOT setup, and use only the terminals independently (bill series will be separate)
+- Render Super Category in Double Row - activates 2 rows instead of default 1 row
+- Royalty_Percentage - currently not in use
+- Punch Same Combo Together - if 2 or more combos are punched constituents will show clubbed together, instead of separately.
+- Enable Other Option in Complimentary Head - Complimentary head gives other option for settlement
+- Enable Change in Item Rate - Access given to the Front POS user to manually edit the rate of any item (not recommended - disabled by default)
+- Separate Dispatch Button (Delivery) - Under Delivery, ""Show Orders"", gives Dispatch Time button as an additional step. If disabled, print bill time will be considered dispatch time.
+- Use Predefined Comment as Item Comment - enables dropdown to use Predefined Comments for item comment
+- Enable New Split Methods - creates option for blank and equal split
+- Enable Manual Order ID - right clicking on a table/delivery table gives option to manually enter Order ID's
+- Check for Daily Physical Entry in Kitchen - mandatory requirement to perform physical entry in kitchen, otherwise closing day won't be possible.
+- Enable Out of Stock - Sheet provision to enter opening stock of all items at the start of the day, so it auto marks out of stock, once complete.
+- Only Use Item Search (Server App) - for server app - punching orders, only searching option is available, not through category wise.
+- Use Confirmation for Print Bill(Server App) - confirmation setting to avoid double clicking on server app.
+- Keyboard Size (1-5) - for virtual keyboard.
+- Disable Barcode Search - can assign barcodes to items, this search feature can be disabled.
+- Enable Item Search Topbar - gives search bar to filter out items directly on front POS
+- Enable Non Residential Cover Flag - for Hotelogix (Property Management Software)
+- Disable Void Item after Settlement - prevents Voiding any item post settlements
+- Enable Printing Day End slip - gives access to end Day Print Slip (top right corner dropdown option)
+- Auto Lock If Idle(In Minutes) - set time for automatic lock of user screen, user password required to unlock
+- Use Predefined Discount For Item Express Discount - replaces express discounts with only the ability to use predefined discounts.
+- Realtime KDS - punching an item pushes it directly to KDS, no requirement to print KOT first
+- Enable Assorted Items - allows multiple items to be bundled into a package - example Hamper
+- Enable Reorder - activate option to reorder KOT or individual items
+- Enable Split by Amount - Split option gets activated under splitting a bill (customizable amount)
+- Enable Split after split with items(For IOT only) - allows a bill to be re-split as per requirements; merging not an option
+- Enable Qty via Button - clicking in between + and - of quantity gives the option to manually enter in the quantity",Admin
+Print KDS,Item > Stations,- Used to assign INDIVIDUAL items from categories which to printers to bypass the Category mapping.,Admin
+Print KDS,Instance Print,"- Used in outlets with IOT setups - or multiple instances. (especially where location of the printers are separated by different floors)
+(POSist Print Utility has to be running to read printers installed under the control panel)
+
+- Top Section - is used for Assigning Terminal Activity to the BILLS Printer.
+
+
+- Lower Section - is used for Assigning Terminal Activity to the KOT Printer",Admin
+Print KDS,Print Settings,"Available Options:
+- Printer Server - all printers should be installed on a main server(PC) - the IP address of the system is recorded here as the Main Print Server example 192.168.1.178 (Utility should only be installed on the main server)
+(using ""localhost"" - the print commands go to the same respective system *UTILITY to be installed on all systems)
+- Station Wise Print - needs to be enabled for station wise printer to be active, else all print commands go to the default control panel printer
+- Enable e-POS Epson TM-i Print - can use 1 cloud printer - this enables the cloud printer / IP for which needs to be assigned under the setting ""EPSON Printer IP""(2nd last option of the same section)
+- Print Bill By Cashier Only - for specific tabs can restrict Bill printing to the Cashier Users only.
+- Enable Bluetooth Printer - enables bluetooth printing (can be used for only single bluetooth printer / tablet to BT printer) 
+Caution with BT printer - wait for 2 - 3 seconds post KOT print to print the Bill (to avoid missing the 2nd print)
+Also, in BT Printers, merging KOT - Bill Print / KOT - Bill Print - Settlement WON't Work (BT printer can only receive 1 command at a time)
+DO NOT USE the Setting ""Enable Bluetooth Printer"" if using BT print Utility on the tablet
+- Print Delivery Message - enables the option to print delivery message with KOT's
+- Bill Print Optional - prompt is enabled on whether a bill print is required - OK/ Cancel
+- Activate New Print Utility - (Default activated)
+- Print DMP Activate For - used for Dot matrix printer - enable if this type of printing is used for KOT/ Bill
+- Print Default Size - default size is 10 , can be lowered or increased: 8 - 13
+- Print Default Bold - default enabled - highlights the printing to be more clearer
+- Use EPSON SDK - IPADS have access to enabling the IP address of the respective printer (this setting activates the IPAD operating system for this print forwarding)
+Note: 1 IPAD can be linked to 1 printer, not more than 1. However multiple IPADS can be set on 1 printer, or separate printers this way
+- Use Item wise Stations - enabled to activate Item Wise Station Printing (otherwise default is category station wise printing)",Admin
+Print KDS,Kot Settings,"Available Options:
+- Category-Wise Print Kot - separates each category on the KOT, ex - shakes, juices, mocKTails will show up in separate sections.
+- Enable Comment on KOT Print - gives a KOT Comment Button(above total amount & taxes) while punching in a KOT
+- Disable KOT - skip KOT and proceed directly to Bill
+- Print KOT with bill - KOT and bill print merges into 1 action
+- KOT Print Copies - can increase number of copies more than default 1
+- Master KOT Enable For Food/ Liquor - Master KOT printer will default print 
+- Enable Separate Punch Item in KOT - punching a similar item will show as separate counts instead of clubbed together
+- KOT Print Template Number - with the field blank, a default template is used, but if a specific template number is used, a different format can be tested **Refer KOT Print Template Document - websitedheko.com/OPS**
+- Disable Print KOT number on bill - hides KOT number from the bill
+- Hold and Fire Bill - Option to punch a full KOT, but keep the items on hold, sending 1 item at a time, for example Starters > Main Course> Desserts (Show H/F Items Button on KOT Punching screen)
+- KOT Print Option - prompt is enabled on whether a KOT print is required - OK/ Cancel
+
+- Print Item Size in KOT / Print Bill No Size(KOT) / Print Steward Size(KOT) / Print Table No Size(KOT)  - control individual font sizes, default is 10
+- Master KOT Instance Wise - The Master Station Category Printer, if print is enabled from T1/T2/ other terminals; these can be separated to other printers.
+- Hide on Printed KOT - option to hide: Table Number/ Tab Name/ Bill Number/ Order Number/ Waiter Name/ KOT Number/ Covers/ Customer Into
+- Print Item Wise KOT - separates each item on the KOT, This Prints Item Wise KOT + Consolidated KOT.
+- Disable Consolidated KOT for Item Wise - blocks Consolidated KOT from the above setting for relevant Format
+- Print Running Order Tag on KOT - if punching a new KOT for an existing table; PRINTS a ""Running Order Tag"" on it - so that the chef is made aware and can prioritize kitchen preparations
+- Disable Zomato/Swiggy Order Print - zomato orders automatically print a bill - this option disables the print (no longer in use)
+- Hide Total Qty Field in KOT - hides total qty field from being showcased on KOT
+- Mark Separate Items in KOT - enables a ""mark Checkbox"" when punching KOT - checking the box, puts a section separation post that item.
+- Print Offer in KOT - showcases offers applied on KOT
+- Disable Logo on KOT - hides logo on KOT
+- Table Transfer Print on KOT Printer - transferring a table, causes a new hard copy KOT receipt to showcase this billing operation
+- Combo Constituent Item Station Print - This needs to be enabled for Station wise printing; IF a combo constituents a meal + beverage, which is to go to separate KOT printers; Meal > 1st Printer; Beverage > 2nd printer
+- Enable Short Name on Print KOT - allows shortnames for KOT's; this is assigned to items at the Brand level ""Item Shortname Tab""
+- Online Order Info on KOT - Online Orders aggregator info can be displayed on the KOT.
+- Enable KOT Item Wrapping - wraps the text to the next line (Clearler Font formatting); as only 10 characters can be displayed via the thermal Printer
+- Enable Room No. Print - Hotelogix room number gets printed on the bill
+- Enable Button to send KOT on Bill Printer - optional button to send KOT print through the Bill printer instead
+- Enable Void KOT Print on Bill Printer after Settlement - any voidation post settlement of a bill, gets a Void KOT print through the bill printer, if enabled",Admin
+Print KDS,Bill Settings,"Available Options:
+- Re-print Bill - enables access to reprinting (can be blocked for anti theft purposes)
+- Category- Wise Split Bill - Split up the bill, category wise (similar to category wise KOT split)
+- Header on Bill - Address/Gst details as per client can be put and customized.
+32 characters fit on one line on the 3 inch thermal printer (with default font size)
+- Footer on Bill - feedback/ thank you, other details can be displayed in bottommost section of the bill
+- Bill Print Copies - can be increased or decreased
+- Bill SMS Outlet Name - on the Billing SMS(transactional sms, purchased separate module), can customize the name of the outlet in this field
+- Bill Print Template Number - choice of template formats can be chosen for bills - **Refer KOT Print Template Document - websitedheko.com/OPS**
+- Separate Food Liquor - enables a different bill print for Liquor from food
+- Header/ Footer on Food Liquor Bill - this can be customized separately from the regular bill if selecting the above option
+- Suffix on Food/ Liquor Bill - Characters - Alphanumeric can be used as a code for the ending of the bill for identification
+- Bill Print Prefix - Characters - Alphanumeric can be used as a code for the start of the bill for identification
+- GSTIN Number - can be entered in this field to be added into the Bill Header
+- Send Link of the Bill - send an sms with Bill Link (PDF copy of bill)
+- Left Space in Bill -  in case a bill gets cut from the left side , you can shift 2/3 or more characters to the right by keeping a left size space
+- Delivery Bill Copies - for delivery tab enables set number of copies (by default 1)
+- Hide Food Liquor Total in Separate Bill - based on the ""Separate Food Liquor"" setting, will show only totals of food/ Liquor, not both
+- POS Code - some restaurants have POS system codes, which can be entered to show on the bill
+- Print After Settle Copies - Post settling a bill, set number of print copies of the bill required
+- Print Table/ Bill Number/ Steward Size - can set the font sizes for these respective sections on the bill
+- Print Show Pay Value - at the end of the bill introduces a ""To Pay"" amount in clear larger font size(For client to easily see)
+- Print Total Qty Size - increase/ decrease Total Qty Font size
+- Enable Bill Items Wrapping - wrap text of the bill items, same as KOT, to be more presentable
+- Print Transaction Info on Bill - can enable: credit card/ debit card/ coupon/ online/ other settlement info to be shown on the bill
+- Disable Printing of NC Bills - allows disabling No Charge / 0 bills, either with or without confirmation. (as it is a 0 charge bill, printing might not be required)
+- Enable Print Change Due on Bill - shows ""change/ balance payable to client"" info on the bill
+- Header on QR on Bill - field to customize header of QR bills
+- Enable Open Cash Drawer - Cash Drawers can be linked to the system(printer); enabling this setting will open the cash drawer either at Print Bill/ Settlement action.
+- Only Cash Settlement Open Cash Drawer - Cash Drawers can be linked to the system(printer); enabling this setting will open the cash drawer only for ""CASH"" Settlement action
+- Enable Comment on Bill - creates a ""Bill Comment Button"" on the KOT punching screen, a bill comment can be added which will be printed on KOT & Bill Print.
+- Hide on Printed Bill - enables option to hide fields: Table Number/ Tab Name/ Bill Number/ Waiter Name/ Delivery Boy Name/ Cashier Name/ Covers/ Payment Info
+- Enable Open Cash Drawer Button - option to open Cash Drawer manually. - this button is available from Top right corner dropdown(user name)
+- Print Customer Loyalty Points on the Bill - enabling this setting showcases Customer Loyalty Points on the bill
+- Print Call Center User Name: Bill/ KOT - if an order is placed from the Call Center Application 
+- Stop Zero Value Print on Bill - any items created of 0 value can be skipped on the bill with this setting
+- Alias For Pay(Max 15 Length) - apply an alias name for ""To Pay Value"" on the Bill; example: ""Total""
+- Enable Short Name on Print Bill - allows shortnames for KOT's; this is assigned to items at the Brand level ""Item Shortname Tab""
+- Page Line Length A4/A5 - can set limit of number of lines for A4/A5, before continuing to the next page of the printing(not for thermal printers)
+- Hide Bill Comments - can hide comments on the final bill
+- Alias for Customer GSTIN - in countries other than India, they might have taxes other than GST, can rename and keep a different Alias here for the bill
+- Disable Table Transfer Print on Bill Printer - The action of transferring a table normally prints out a transfer ticket on the bill printer; this feature disables the print
+- Print Order Number in Bold & For Table - bold/ highlights the Order Number non the Bill
+- Print Order Number Size - Size of Order number displayed can be increased/ decreased (linked to the above setting)
+- Enable KOT comment on bill - show or hide the KOT comments to reflect on bill (normally only reflects on KOT)
+- GEC Store ID - (Client specific for 'Taco Bell') - a  unique store ID is shared with POSist, and we enter this in the field provided The store ID is linked with the Bill and codes are generated with Taco Bell's back end software
+- Print Total Amount Size - ""Total Amount"" size can be entered else it is specific to the Bill Template; default used if blank
+- Print Label Template - template number can be chosen for labels; default used if blank
+- Advanced Booking Template - template numbers can be chosen for advance booking bills; default used if blank",Admin
+Print KDS,KDS Settings,"Available Options:
+- Bump Bill from Kitchen Screen - 
+KDS has two main screens(or more) - the Chefs Screen + the Steward Screen;
+This feature is enabled, if you do not want to MANUALLY push the orders from the Chef Screen to the next, Steward Screen, it happens automatically.
+- Enable Audio on New Order in KDS - enables audio sound; rings for incoming new orders
+- Trigger MFR via KDS - post bumping an order, you can mark an item as Mark Food Ready as a notification for delivery riders",Admin
+Print KDS,KDS Colour Codes,"- Set Colour codes for each order box on the KDS screen to signify how much time has lapsed/passed since the order was placed.
+Example - 5 minutes since order placed - ORANGE 
+10 minutes since order placed - YELLOW
+15 minutes since order placed - RED (to define priority)",Admin
+Print KDS,KDS Images,"Customization of KDS Screen; Images can be set to customize-
+Background Image
+Logo
+Customer Display Screen
+Customer Display Side Screen (refers to the Side/ Promotion Screen: can show item images for promotion/ offers)",Admin
+Print KDS,KDS Stages,"- Used to create multiple stages for the KDS screen.
+
+The order lands on all the screens, however it stays highlighted only on the active stage.
+You can customize the mapping to move from one stage of preparation to the other
+
+Stages can be added/ deleted",Admin
+User Settings,,"- Users can be created under this section to provide access to the different operations personnel.
+- Permissions can be granted as per the role of the staff
+
+Mandatory fields: 
+First and Last name(can use dot ""."")
+Username 
+Passcode (6 digit numerical code)
+Password - *has to follow rules in the right cell*
+
+Other fields:
+Privilege Level - can be set from 1 - 5; privilege level is used for Offer, so higher privilege user can see higher offers etc
+
+
+Basis the Role Selected: Manager/ Cashier/ Waiter/ Delivery/ Stock - different permissions will auto fill.
+The permissions can be further customized to enable or disable functions of the user.
+
+Permissions access for:
+Banquet/ Billing/ Billing Operations/ Bill Operations(Advance Order)/ CRM/ Cards/ Cockpit/ Configuration/ Disable Settings(zomato)/ Expenses/ Feedback/ Find Bill/ Franchise/ Menu/ Offers/ etc",Admin
+Cache clear,Billing,"- Note: in case of clearing the browser cache - ""Day Sales amount get reset to 0 for that day"" - reports show the true value.",Admin
+"Covers
+(Baseline)",Billing,"Used by waiter to enter in number of Persons/ PAX for the table. Used for reporting purposes.
+Can be enabled / disabled from deployment configurations.",Admin
+"Item Punching: 
+3 Methods
+(Baseline)",Billing,"Items can be punched for taking a client's order by using the following 3 methods:
+
+Top Selling 30 items - select from the top selling white item tiles directly
+Selection via Categories/ Supercategories - choose relevant Super Category> Category to filter out the Items
+Manual Entry Item & Quantity - manually enter in the item name and quantity and click add from the top right bar
+Manual entry can be via entering item name/letters of item name to search/ item code",Admin
+"Three Dots - Item Modifier Options
+(passcode application)
+(Baseline)",Billing,"While Punching Items onto the POS, additional operations might be required to Modify the item
+These can be accessed by clicking the ""Three Dots Option"" at the side of an item.
+
+Adding Comments (no passcode) - specific comments for the KOT can be added for the chef, eg - no sugar, extra spicy
+Addons (no passcode) - addons mapped to an item can be punched in
+Item Discounts (passcode required) - discounts can be added, which are predefined at brand level. Comment for Discount is mandatory",Admin
+"CRM Feature
+(Baseline)",Billing,"Customer Relationship Management:
+Used to record client details: Contact Info, Name, Address etc.
+
+Enter Number and hit Enter > Mandatory Fields Name and Number, rest is optional.
+
+Once a clients details have been added, on his/her next visit, either number or name can be entered and the clients details will auto populate to be chose via dropdown.",Admin
+"Bill Offers
+(Baseline)",Billing,"<Passcode Required>
+Offers/ Discounts can be applied to the entire Bill in two forms:
+
+- Predefined Offers (created under Offers Module)
+- Apply Express Offer (Manually choosing % or Amount of discount)
+
+The Offers interface also can be used to delete an Offer previously applied - ""Red Delete button"" at the bottom left of the interface.
+
+Ewards/ Discount Coupon Codes can also be applied as per Coupon Codes created from Offers Module.",Admin
+"Tax Breakup and Charges
+(Baseline)",Billing,"Below Offers Button, you can click on the red substract button Tax Amount.
+This gives access to review the tax breakup being applied on the bill.
+
+If Setting ""Remove Tax Manually"" is applied, using passcode, can give access to removing certain taxes as per operations requirement
+Example: Service tax/ GST on SC
+
+GST cannot be removed.",Admin
+"Print KOT
+(Baseline)",Billing,"Hitting Print KOT - sends the order punched to the KITCHEN Printers for preparation.
+You can go back to punch other orders by clicking ""Dine In"" or any other tabs.
+
+KOT Settings(Cogs/Gears button) is available to 
+Void KOT - delete the KOT in cart
+Reprint KOT - send a new print copy to the kitchen
+Copy KOT - Copy the KOT and can paste it on another table (if a client wants to shift table)
+Send a Kitchen Message - Send a message to the Kitchen regarding existing KOT (Brand: Predefined Comments tagged to Kitchen message)",Admin
+"Print Bill
+(Baseline)",Billing,"Once the whole order is completed, the bill Print Button can be used to print a bill from the Billing Counter.
+You can go back to punch other orders by clicking ""Dine In"" or any other tabs.
+
+Table View Shows details of: Table Number, Customer Name, Total Bill Value, Bill Value per Cover, Time Elapsed since punching the KOT
+Right Clicking on the table gives options to: Edit Covers/ Copy/ Void/ Split Bill (Discussed in next Table Settings)
+
+
+Printing a bill can be merged with Settlement as per operational requirements (Deployment Configurations)
+""Settle on Print""",Admin
+"Table Settings (Dine In)
+(If Applicable)",Billing,"Right Clicking on the table gives options to: 
+Edit Covers - change number of covers associated with the bill (incase more customers join the table)
+Copy - can copy and paste to move the bill to a new table
+Void - cancel the entire bill
+Reprint Bill - Bill copy can be reprinted(once already printed)
+
+Split Bill (Discussed in next Table Settings) - Split bill in multiple parts as per:
+Normal Split/ Splitting Automatically by Category/ Split by Food & Liquor/ Equal Split/ Blank Split(split a new blank table to punch more items)/ Amount Split",Admin
+"Settlement Functions / Payment Modes
+(Baseline)",Billing,"A bill can finally be settled at the time of receiving payment. Settlement Modes include:
+
+Cash - Denominations can be chosen manually to calculate change. Or Add Cash Payment can be simply clicked if exact amount is received.
+Credit Card - Choice of card can be chosen(master/visa etc); Transaction number(last 4 digits of card- NOT required); 
+Debit Card - Choice of card can be chosen(master/visa etc); Transaction number(last 4 digits of card- NOT required); 
+Coupons - Sodexo/ tickets/ Meal Vouchers etc
+Online - COD/ online modes example zomato/ swiggy/ fassos/ swiggy etc...
+Others - collection through other modes - paypal/ Gpay etc
+BTC - Bill on hold/ bill to company on credit for future payments",Admin
+"Find Bill Functions
+(Baseline)",Billing,"Search for previously settled bills through multiple filters: date, tab, amount, name etc
+
+Find Bill gives access(based on user permissions) to Reprint a bill, void a bill, review Summary of the bill.
+It also gives access to Editing a bill - Edit the existing bill (Editing access only available for upto 5 days in the past)",Admin
+"CRM Reports
+(Briefing)",Billing,"Top - right Dropdown > CRM
+Gives access to all Customer Information which has been entered into the system.
+
+Provides Reports & Graphical presentation of clients frequency, past orders, Most order items, Top categories etc.
+
+Multiple filter options available:
+to check clients visiting multiple, or fewer times as per frequency.
+Or by high paying, or low paying as per amount.
+Or Anniversary, DOB etc",Admin
+"Offer Creation 
+(Baseline - If Applicable)",Billing,"*At Brand Level: Brand, menu options, next to ""Manage""
+Auto Publish - to publish through all deployments
+At Cluster level, ""Manage Offer Options"" to activate the Brand Offers for each cluster. Disable For Provision available to disable the offer within the cluster for specific deployments.
+
+*At Deployment Level: Top right dropdown > Offer (Visible only for the respective Outlet)
+Create Offer: by entering a name; choosing applicable tabs; type as percent/amount etc; assign privilege level (level 1 - 5; managers get higher level privilege access - user rights)
+
+Criteria: set Min Bill Amount; Min Item Count; Max Discount; and applicability on complete bill/ item wise/ specific item criteria
+
+Validation: set date/time/ specific week days range for applicability; choice of excluding certain days example holidays
+
+Create Codes: used for creating specific offer coupon codes.
+Publish to finalize.
+
+Once finalized, All created offers can be reviewed/ edited/ deleted as per operational requirement.
+
+
+*Offer Coupon Codes: Offers>Settings>Codes - create for Series/ Random/ Customer format; for specific date range; apply prefix(max 5 Alpha numeric codes)
+Export import sheets option available for codes",Admin
+"Expenses 
+(If Applicable)",Billing,"Expenses module gives access to recording general expenses by the cashier; Dropdown > Expenses
+Category Master - manage expense categories by adding, editing or deleting (built into categories for reporting purposes)
+Eg - Dairy Exp/ General Exp/ Electrical Exp
+
+Vendor Master - manage Vendors or suppliers of general expenses
+Eg - petrol Vendor/ Local dairy vendor - chai
+
+Item Master - manage the Actual Item Expenses by associating them with their relevant category. Add/ Edit/ Delete
+Tax Master - create, edit or delete taxes as per applicable on expenses by vendors
+
+*Expense Entry: Log Expense entries as per previously set up categories-vendors-taxes.
+
+Expense Report: Review of all expenses as per date filters and customized report types.",Admin
+Payment Details Report,Deployment,"Headers - Bill Number, Advance Number, Sync Time, Open Time, Table Number, Tab Type, Covers, Print Time, Close Time, Total Amount, Discount, Net Sales, [Tax 1], [Tax 2], ..., [Tax N], [Charge 1], [Charge 2], ..., [Charge N], Net sales with charges, Net Amt, Round Off, Gross Total, Cash, Credit Card, Debit Card, Other, Coupon, Online, BTC, TTR, Smart Card, Advance, Tip Mode, Tip Amount, Gross Total With Tip, Customer, Customer Mobile, Nationality, Session, GSTIN Number, Loyalty, Source, Order Id, Complimentary, Void, User Name
+Description - This report provides bill-wise details including timestamps, table info, customer data, sales figures, payment modes, discounts, taxes, and charges. It's useful for deep-dive audits of billing activity per transaction.",Report
+Tax Summary Report,"Deployment, Enterprise","Headers - Date, No Of Bills, Amount, Discount, Net Amount, [Tax 1], [Tax 2], ..., [Tax N], [Charge 1], [Charge 2], ..., [Charge N], Net Amount With Charges, Gross Amount, Round Off, Gross Total, Cash, Credit Card, Debit Card, Other, Coupon, Online, BTC, TTR, Smart Card, Advance
+Description - Summarizes tax amounts collected across multiple bills for each day. Includes discounts, net sales, and tax bifurcations, making it ideal for tax reporting, GST filing, and finance reconciliations.",Report
+CRM Report(Customer Data Report),"Deployment, Enterprise","Headers - Serial Number, Outlet, Bill Number, Bill Date, Channel, Customer Name, Customer Mobile Number, Phone Number, Email, Address, Landmark, Postal Code, City, Item Category, Item Name, Item Quantity, Item Price, Item Subtotal, Discount, Net Sales, [Tax 1], [Tax 2], ..., [Tax N], Total Tax, Gross Sales, Source, Mode (Inbound / Outbound), User
+Description - Captures customer details along with itemized sales data like item name, quantity, subtotal, tax, and source. Helps in understanding customer behavior, item-level performance, and channel distribution.",Report
+Bill Item Detail Report,Deployment,"Headers - State, Deployment, Bill Number, Order Id, Day Serial, Date, Tab, Table Number, Open Time, Close Time, Is Combo, Category Name, Item Name, Item Number, Item Section, Rate, Quantity, Constituent Quantity, Amount, Discount, Discount Type, Discount Remarks, [Tax 1], [Tax 2], ..., [Tax N], [Charge 1], [Charge 2], ..., [Charge N], Net Amount, Source
+Description - Displays each item sold, including combo constituents if enabled, with associated discounts, taxes, and charges. Useful for inventory, pricing strategy, and combo offer analysis.",Report
+Shifts Report,Deployment,"Headers - Opening Time, Opening Username, Opening Instance, POS Opening Cash, Entered Opening Cash, Opening Cash Variance, Opening Reason, Entered Opening Card,
+Closing Time, Closing Username, Closing Instance, POS Closing Cash, Entered Closing Cash, Closing Cash Variance, Closing Reason, POS Closing Card, Entered Closing Card, Card Variance, Card Variance Reason,
+Total, Cash, Credit Card, Debit Card, Online, Other, Coupon, BTC,
+Total Cash In, Total Cash Out, Voucher / Gift Card Sale, Expense Incurred,
+Closing Attempts, First Attempt Closing, Z Report
+Description - Compares opening and closing cash/card values with user-entered entries, variances, sales split, and expenses. Ideal for cashier validation, shift audits, and Z-report verification.",Report
+Day Report,"Deployment, Enterprise","Headers - Opening Date, Opening User, Opening Instance, POS Opening Cash, Entered Opening Cash, Opening Cash Variance, Opening Reason,
+Closing Date, Closing User, Closing Instance, POS Closing Cash, Entered Closing Cash, Closing Cash Variance, Closing Reason, Envelope Safe Deposits,
+Total, Cash, Credit Card, Debit Card, Online, Other, Coupon, Voucher / Gift Card Sale,
+Cash In, Cash Out, Expense Incurred,
+Closing Attempts, First Attempt Closing, Unsynced Bills Count
+Description - Day-wise aggregation of opening and closing balances, total sales by payment mode, expenses, and unsynced bills. Perfect for management-level reconciliation and tracking financial flow per day.",Report
+Outlet Sales Report,Enterprise,"Headers - Outlet Name, Sale, Discount, Net Sales, Charges, Total Net Sales, Tax, Gross Amount, Bills, Employee Meal Bills, Total Bills, Avg Per Bill, Covers, Complimentary Covers, Avg Per Cover
+Description - This report summarizes sales, tax, and billing performance across multiple outlets. It includes revenue metrics, discounts, tax, and customer flow indicators such as bill counts and covers.",Report
+Daily Sales Report,Enterprise,"Headers - Outlet Name, Date, No Of Items, No Of Bills, Sale, Discount, Charges, Net Sale, Category-wise Sale, Section-wise Sale, CGST, SGST, Other Taxes, Total Tax + Product Level Charges, Net Sales With Charges, Total Amount, Round Off, Gross Amount, Cash, Credit Card, Debit Card, Coupon, Other, Online, BTC, TTR, Advance
+Description - This report presents a comprehensive outlet-wise sales summary including item-level, category-wise, and section-wise breakdowns. It also provides detailed bifurcations of taxes, discounts, charges, net and gross sales, and multiple payment mode collections.",Report
+Offers Report,Enterprise,"Headers - Outlet Name, Offer Name, Qty, Discount Amount, % of Total, Gross Amount, Net Amount, Discount Amount Last Year, % Total of Last Year, Difference Last Year
+Description - This report compares promotional offers across outlets, highlighting the quantity availed, discount values, and their percentage contribution. It also shows historical comparisons with last year’s discounts to evaluate offer performance.",Report
+Item Analysis Report,Enterprise,"Headers - Deployment Name, Item, Category Name, Super Category Name, Rate, Item Qty, Combo Constituent Qty, Total Qty, Amount, Discount, Net Amount, Total Tax, Gross Amount, % Contribution
+Description - This report provides item-level analysis including rate, quantity (including combo constituents), amount, discount, taxes, and contribution percentage. It helps track performance across deployments and categories.",Report
+Daily Sales Breakup Report,Deployment,"""- Cashier can generate a printable report from the """"Thermal Printer/ Cashier Printer"""" (3 inch paper roll printer)
+
+It provides Daily update at the time of print of choice of Sales by:
+Categories Sales by Quantity
+Collection Breakup - imp: cash/card/btc breakup
+Denominations
+Item Sales By Quantity
+Sales Info - Info of sales being discounts, no. of bills, cancelled bills/kots, amount of cancelled bills, covers etc
+Session Sales
+Tab Wise Contribution
+Tab Wise Sales - breakup of tabs: Dine in/Delivery/ takeaway etc
+Table Start - End Bill
+
+Selecting others will cause a lengthier detailed breakup slip.
+
+- User Filter option available to showcase information only specific to the user""",Report
+"Unit
+(Baseline)",Stock master configuration & validation,"▪ Defining Unit Functionality; can define Conversion factor as per base unit selected
+▪ You can add/ edit/ delete units from this module
+▪ Import/Export Template also available",Stock
+"Category
+(Baseline)",Stock master configuration & validation,"""▪ Add, edit, delete super category/ categories for raw materials/semi Processed/ Processed Foods
+▪ Import, export, search super category/ category
+▪ Bulk upload - Download templates""
+- Category Codes don't require to be filled with manual creation(required with bulk uploading)
+- One Category cannot be part of more than one Category
+- Categories Linked to an item, cannot be deleted",Stock
+"Items
+(Baseline)",Stock master configuration & validation,"""Used to create, types of Items: Raw Materials/Semi Processed Items/Processed Foods*
+▪ Add, edit, delete items Process
+▪ Mandatory Fields: Item Name/Category/Base Unit/Selected Units/Preferred Report Unit/Item Type for Base Kitchen/Item Type for Outlet
+▪ Import, export, search items
+▪ Download Templates
+▪ GST Codes Template to update GST on Existing Items""
+- Alias name can be used for alternate languages of the items.
+- Selected Units: Common Units for Purchase/Recipe use.
+- Preferred Units: preferred units for report view (choose any one of 'Selected Units')
+- *Item Type(Item Type for Base Kitchen, Item Type for Outlet) - 
+1. Purchase Items(Raw Materials, Raw Materials)
+2. Semi Processed prepared at base kitchen & has license(Semi-Processed,Raw Material)
+3. Semi Processed prepared at outlet(Not Available, Semi-Processed)
+4. Processed prepared at base kitchen(Processed Food, Raw Material)
+- Items Linked to a Recipe, cannot be deleted.
+",Stock
+"Recipes
+(Baseline)","Used to create Semi-Processed Foods & Processed Foods
+▪ Create, Edit, Delete Recipe
+▪ Search Recipe
+▪ Import Recipe Options - Template Format (Stock master configuration & validation)","- Recipes decimals limited to 2 decimal places(for reporting)
+- Transaction entries deduct recipe values from existing stock to showcase Consumption Reports.
+- If using Recipe Template Format(Should not have gaps between individual recipes)
+- Templates should have Semi Processed on Top, before Processed Foods(if uploading them together)",Stock
+"Brand Item
+(Baseline)","Used to Configure portions, Create Recipes and Map Items to the Brand Billing Page
+▪ Configure Portions for each Outlet Format(Tab), with Import-Export Configuration Option
+▪ Create Recipes for the Outlet Billing Item, with Import-Export Recipe Option
+▪ Map Item->Taxes (Stock master configuration & validation)","- Storage Item checkbox in 'Configure' is for catering Purpose
+- Recipes for Brand Item are set to create 1 Portion of Outlet Billing Item
+- Addition feature of adding ingredient Items to Base Recipe(or other table/takeout/delivery options)",Stock
+Enterprise Integrations,"Aggregators, Syncing and Out of Stock","""- cluster level push to sync to entp integration
+- Images to be uploaded at brand level:
+400x400 - 1600x1600 / 5mb/ jpg / png
+zomato - jpg or png file / swiggy - png file
+
+- Entp integration menu mapping takes place at the Cluster level
+- suggest to clients: single tab to be used for swiggy/zomato/ all integrations
+- Automatic fetch as cluster level is synced
+
+functions: 
+1.sequencing
+2. activate/deactivate
+3. show items
+4. scheduling option not available(FR raised)
+5. item complete description on click
+6. addons with sequencing and active/inactive status
+
+
+Offers: works for zomato/ doesn't work for swiggy(currently)
+- offers can be customized for required deployment as per requirement
+- discount: fixed/percentage/flatrate & bogo
+
+Bogo offers can only be applied on base items: not variants/not combo/not addons.
+And Bogo offers are required to be added to zomato dashboard first
+Sync can be done from offer sync button
+
+
+Packaging charges & Delivery Charges:
+- Item packaging charges
+-Packaging or delivery dropdown can be selected
+- GST applicable on charges
+-map aggregators, swiggy/zomato
+
+
+Modifier views:
+-for addons - mark inactive/active for all addons across the menu
+
+Settings:Create Snapshot - 
+Creates a snapshot of all settings, which can be imported into other clusters.
+Copy and Paste
+- Menu Configuration
+- Offers
+- Charges
+
+Syncing: Sync can be done for all clusters or for individual
+- Choose Deployments>Aggregators>Tab
+
+Out of Stock:
+Mark Zomato out of Stock First, before Swiggy
+For Zomato: 
+Administration> Menu Management> Items>
+Mark of Stock from """"Stock Control""""
+Mark for the relevant Deployment
+(immediate syncing)
+
+For Swiggy: 
+Right click on Item from """"Delivery Tab"""" 
+(takes 5 - 6 minutes to sync)""",Integrations
+Prepaid Card Reports,Deployment,"- Used for Food Court Module Integration with Prepaid Cards - Card Consumption Report, Card Listing, Card Sales, Auto Settle",Reports
+Combo Report,Deployment,- Review Combowise Sales as a total of the combo including its constituent mapped items.,Reports
+Item Wise Contribution Report,Deployment,"""- Generates consolidated Sale Value - which can be sorted By Net Amount/ By Quantity
+
+Can be used to Track which is the Leading items within the Outlet (net amt/ Qty)
+
+Options to Sort in Ascending/ Descending, include addons/ combos/ complimentary.
+Option available to Export to Excel
+
+
+(If recipe of item is created under stock - Cost Incurred + Margin Profit is also a feature of this report""",Reports
+Item By Source Report,Deployment,"""- Can review sales of item by Source OR Channels: Sales Channels & Sub Sales Channels
+
+Sales Channel refers to the Tab/ Format: Dine In/ Takeaway etc
+Sub Sales Channels refers to whether it's In-Store/ Zomato/ Swiggy, other distributors
+
+- Displays Item, Category, Qty, Rate, Sales and Discount if any.
+
+- Can be exported and filtered for more analysis""",Reports
+User Attendance Report,Deployment,"""- used to generate attendance reports of employees, once the biometric device has been integrated.
+Tracks punch in & punch out to calculate total hours.""",Reports
+Growth Report,Deployment,"""- Can review and compare chosen week with last week and showcases growth %, Positive or negative
+- Showcases: No of Bills, Net Sales, COGS, Wastage, Total profit etc (Billing + Stock)""",Reports
+Entry Report,Stock Reports,"▪ Entry Report: Generate detailed entry wise reports for: Stock entry/ Stock Sale/ Physical Stock/ Wastage/ Stock Transfer etc
+Bifurcations available for Store, Super Category, Category, Vendor
+▪ Consolidated Entry Report: generate consolidated report in a summary format for the same transactions as above.
+
+Reports can be extracted to Excel/CSV etc
+",Stock
+Payment Report,Stock Reports,"▪ Can generate reports of all payments to vendors within a defined date range
+Quick reference to check Paid/Due Amount against Invoice No.
+Biforcations available for Entry Type, Vendors",Stock
+Booking Journal,Stock Reports,▪ Booking Journal Report: review a complete journal of all entries for one specific item,Stock
+Vendor Pricing Report,Stock Reports,▪ Summary of Vendor Pricing of specific items for review,Stock
+Indent Report,Stock Reports,"▪ Indent Report: generate reports for supplied/received entries
+Bifurcations available for Date filter, Super Category, Category, Items, Direct Dispatch, Deleted Indents, Status
+▪ Internal Indent Report: generate reports for Internal Kitchen/Stores, main or others.
+",Stock
+Consolidated Indent Report,Stock Reports,"▪ Consolidated Indent Report: generate consolidated summary of indent report as per Super Category> Category>Raw Materials
+▪ Consolidated Internal Indent Report: generate consolidated summary of internal indent report as per Super Category> Category>Raw Materials",Stock
+Stock Return,Stock Reports,"▪ Indent Stock Report:generate and review a summary of all Stock Return transactions
+▪ Internal Indent Stock Report: generate and review a summary of all Stock Return transactions(within the outlet - kitchen to store)
+▪ Stock Sale Return Report: to review summary of returns of sale of stock from 3rd parties
+▪ Stock Entry Return Report: to review summary of returns of stock entries.",Stock
+Suspense Report,Stock Reports,▪ Generate and review suspicious entries: rejected/resolved/not accepted or rejected from supplier/receiver point of view.,Stock
+Bulk Return Report,Stock Reports,▪ review any returns from Bulk entry reports,Stock
+Purchase Detail Report,Stock Reports,▪ Generate detailed reports to compare/analyze Raw materials purchased from different vendors,Stock
+"Purchase Summary Report
+(Brief - If applicable)",Stock Reports,"▪ Item Wise: Review item wise reports as a whole
+▪ Vendor Wise: review vendor wise reports as a whole (useful for accounts departments)
+▪ Consolidated: review total consolidated value as per vendor.",Stock
+Purchase Order Report,Stock Reports,"▪ generate and review all PO's created
+Gives details of Vendors>PO number>Status>items/units/rates etc",Stock
+Sales Order Report,Stock Reports,▪ generate and review all Sales Orders(third party) created,Stock
+Sales order Delivery Challan Report,Stock Reports,▪ generate Sales Order Delivery Challans Created as per Item Wise/Customer Wise/Pending,Stock
+Production by Source Report,Stock Reports,▪ review production - raw materials to semi processed/ raw to finished/ semi processed to finished etc,Stock
+Purchase Requisition Report,Stock Reports,▪ generate and review all PR's created,Stock
+"Consumption Report
+(Baseline)",Stock Reports,"▪ To analyse the entire data: Calculate consumption of resources basis recipes and entries made
+Stages: Opening|Purchase|Consumption|Wastage|Reuse|Return|Closing|Physical Gain/Loss",Stock
+"Variance Report
+(Baseline)",Stock Reports,"▪ To analyse the entire data: Calculate variances between existing stock and physically verified stock
+Stages: Opening|Purchase|Consumption|Wastage|Reuse|Return|Closing|Physical Gain/Loss|Physical Stock - Variance",Stock
+"Issue Report
+(Baseline)",Stock Reports,"▪ To review items issued within the organization to cost center: Internal Indent + Stock Transfers (Combined 2 reports)
+2 types:
+Issue Report(internal)
+Indent Issue Report(regular)
+Avg Price/Last Price/Default Cost Versions",Stock
+"Food Cost Report
+(Baseline)",Stock Reports,▪ To calculate Food Cost ,Stock
+"Closing Stock Report
+(Baseline)",Stock Reports,"▪ To review current stock as per Avg Price/Last Price/Default Cost Versions
+Review Current stock of Kitchen, Main Store, Other Stores and in Total
+Special functionality: Can export this report to excel without items at '0' Quantity",Stock
+Finished Food Report,Stock Reports,"▪ Only for Base Kitchen: review finished foods report within the base kitchen
+Stages: Opening|Purchase|Consumption|Wastage|Reuse|Return|Closing|Physical Gain/Loss",Stock
+Intermediate(Semi),Stock Reports,"▪ Depending on Setup, can be at Base Kitchen/Outlet level for semi finished recipes: review semi processed foods report within the base kitchen
+Stages: Opening|Purchase|Consumption|Wastage|Reuse|Return|Closing|Physical Gain/Loss",Stock
+RR Report,Stock Reports,"RR Listing Report: Purchase Report Showcasing only Net Amount (without taxes and discounts)
+RR Register Report: Purchase Report Showcasing with taxes and Discounts",Stock
+Entry Sync Report,Stock Reports,"▪ Generate this report to review transaction details: Number/ date-time/ sync time/ user/ History(summary) & Invoice PDF Preview
+
+This is useful to consolidate and check syncing with user and entry time.",Stock
+"Entries
+(Baseline)",Stock Operations,"▪ Opening Stock: make entries of all Opening Stock in hand only once before stock goes live; For respective: Stores/Kitchens etc
+Download Template, can be imported.
+▪ Stock Entry(Direct Entry w/o Purchase Order): input entry details and submit entries
+▪ Stock Sale(Sale to 3rd party/Receivers):input entry details relating to sale of existing stock
+▪ Physical Stock(Closing Stock):  For respective: Stores/Kitchens etc
+▪ Wastage Entries: input any occurrences of wastages/loss of stock (RM/SP/PF)
+▪ Stock Transfer: input direct entries, between store-kitchen
+▪ Processed Food(only for Base Kitchen): input direct entries of Processed Foods at the Base Kitchen
+▪ Semi Processed Food Entry(for kitchens):input direct entries of Semi Processed Foods at the any Kitchen
+▪ Templates: Option to delete any created templates
+
+Templates can be made to save regular types of Entries(to save frequenquent entry types)",Stock
+"Edit Entries
+(Baseline)",Stock Operations,"Editing option is available for correction for any errors made. Entries can only be edited 5 days prior to the current date.
+▪ Edit, View Entry Logs or View Invoice(if present).
+",Stock
+"Internal Indenting
+(Baseline)",Stock Operations,"Formal Communication of orders placed between Kitchen and Store;
+▪ Orders: generate order request for indent by the kitchen to store/vice versa
+▪ Pending  Indents: review pending order requests placed at the respective kitchen/store
+▪ Supply Orders: open incoming orders and process supplied quantities with comments 
+▪ Receive Orders: open and validate/acknowledge the quantity received
+▪ Suspicious Supplied Indents: if supplied quantity varies from requested > can be accepted or rejected
+If Accepted: can mark stock for re-use/wastage
+If Rejected: the entry is sent to the Store as Suspicious Received Indents
+▪ Suspicious Received Indents: rejected Suspicious by store comes goes back to the Suspicious claiming party.
+They again have a choice to reject sending it back to Suspicious Supplied Indents (3 cycles limit - then Suspense Account)
+▪ Return: search for indents during date range and return indents to supplier(store)
+▪ Process Return: collect returns of stock and mark stock for re-use/wastage
+▪ Templates: add frequent Item Indents for immediate use as per a fixed templates",Stock
+"Indent
+(Brief - If applicable)",Stock Operations,"Formal Communication from one Outlet to another/ Base Kitchen to Outlet;
+▪ Orders: generate order request for indent by the outlet to the base kitchen/vice versa
+▪ Pending  Indents: review pending order requests placed at the respective outlet
+▪ Dispatch: Direct Dispatch(DD) of items to the outlet from Base Kitchen (without formal Order(Indent) being placed)
+▪ Supply Orders: open incoming orders and process supplied quantities with comments  to Outlet
+▪ Receive Orders: open and validate/acknowledge the quantity received
+▪ Suspicious Supplied Indents: if supplied quantity varies from requested > can be accepted or rejected
+If Accepted: can mark stock for re-use/wastage
+If Rejected: the entry is sent to the Base Kitchen as Suspicious Received Indents
+▪ Suspicious Received Indents: rejected Suspicious by store comes goes back to the Suspicious claiming party.
+They again have a choice to reject sending it back to Suspicious Supplied Indents (3 cycles limit - then Suspense Account)
+▪ Return: search for indents during date range and return indents to supplier(Base kitchen)
+▪ Process Return: collect returns of stock and mark stock for reuse/wastage
+▪ Bulk Return: return of bulk items stock without searching for the indent(multiple indents might be involved)
+Return & Process Return Tabs available
+▪ Templates: add frequent Item Indents for immediate use as per a fixed templates",Stock
+"Purchase Order
+(Baseline)",Stock Operations,"Formalized two way method of purchasing materials for Stock
+▪ Order: Create Order request from Vendors
+▪ Open POs: while accepting the order - can modify created PO's, or settle the entry >System redirects to 'Stock Entry To complete this step
+▪  Vendor Debit: if Vendors short supplies materials, we can obtain difference of price through a vendor debit entry to balance accounts (incase the rates are higher than our contract pricing)
+We can debit the difference/ charge the difference to the Vendor",Stock
+"Sales Order
+(Baseline)",Stock Operations,"Sale of stock to third party
+▪ Sales Order: create order as per 3rd party request. Print Delivery Challan
+▪ Open SOs: Either raise a production request/Supply items requested in the Order
+▪ Production Requests: any requests for Sales order which require production can be received at the Kitchen >produced and then supplied
+▪ Generate Invoice: search and find and generate invoice/challans, if not previously done(1 time invoice generation)
+▪ Reprint Invoice: search and find and generate invoice/challans, this is only for re-reprint facility
+▪ Return: make entries back into the system, if the 3rd party returns the stock back",Stock
+"Purchase Requisition
+(Brief - If Applicable)",Stock Operations,"If the company has a centralized Purchase Department, a Purchase requisition request is placed to the Purchase Department.
+The purchase team procures the items required.
+▪ Requisition: order raised to the Purchase Department
+PD ID: Opens Pending PR: and Raises a PO
+▪ Pending PRs: review existing PR's; Opening redirects to Stock Entry
+▪ Vendor Debit:  ",Stock
+"Recipe Report
+(Baseline)",Stock Operations,"▪ Recipe Report: Generate and view Recipe Costs based on Purchase Entries of materials.
+Viewable in Average Pricing & Last Price 
+▪ Recipe Report Summary: Same report, displaying only base recipe, without ingredients
+▪ Material Estimation: Prediction module to estimate cost of orders and can be exported.",Stock
+"Local Stock Return
+(Baseline)",Stock Operations,"Purchased materials to be returned back to the vendor
+▪ Return to Vendor: Input reverse entries back to the vendors
+▪ Return from Receiver: input reverse entries sold to 3rd parties which are being returned back
+▪ Open Return: review return entries",Stock
+"Payment
+(Brief - If Applicable)
+",Stock Operations,"Recording Payment entries which are due or settled.
+▪ Choose Entry Type and Vendor > Make Payment. Payment Mode can be selected, in half/full
+",Stock
+"Gate Pass
+(Brief - If Applicable)",Stock Operations,"Large scale companies record entries of people with Gate Pass (Security Team)
+▪ Receive Gate Pass: Security Teams Open generated gatepasses and receive entries from the suppliers 
+▪ Process Gate Pass: Redirected to Stock Sale",Stock
+"Reprint
+(Brief - If Applicable)",Stock Operations,"▪ Can search and reprint entries from any module & sub-module
+▪ Logs available for view to see how many times a transaction has been reprinted",Stock
+"Production Plan
+(if Applicable)",Stock Operations,"Used to create Pre defined Production Plans > Find Estimate raw materials for a select Plan
+Planning:
+▪ New Plan - create or add new plan or variations by selecting a date, items with quantities to be used for the plan
+▪ Manage Plans - to view, modify or settle existing Production Plans
+
+Procurement: used to search for past created plans, and can showcase an estimate of all raw materials needed
+▪ Options to edit the quantity as per choice, or proceed to Procuring
+▪ Procuring: Can be done via:
+        1.  Internal Indenting: Kitchen Team raises a procurement request > Items go to the store > store issues materials to the kitchen > kitchen receives the materials
+        2. Direct Transfer: Manual procurement, store procures, and updates via direct transfer from the production plan section
+
+Production: once raw materials are procured, 'Perform Production' can be selected.
+Expected qty is shown, and manual inputs of actual produced qty can be entered to realise variances
+",Stock
